@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaurav.hungergo.MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleX="2"
+        android:layout_height="match_parent"
+        android:src="@drawable/food2"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ce191917"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="©"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/Hunger_go_text"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/Hunger_go_text"
+        android:id="@+id/textView2"
+        android:layout_toRightOf="@id/Hunger_go_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĤǦ"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="©"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_alignTop="@id/textView3"
+        android:layout_toRightOf="@id/textView3"
+        android:id="@+id/textView" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:text="Don't wait in line.Order online."
+    android:textSize="20dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/Hunger_go_text"
+        android:layout_alignRight="@+id/Hunger_go_text"
+        android:layout_alignEnd="@+id/Hunger_go_text"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Ĥunger Ǧo"
+        android:textStyle="italic"
+        android:textSize="70dp"
+
+        android:id="@+id/Hunger_go_text"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarSplitScreen"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="29dp" />
+</RelativeLayout>

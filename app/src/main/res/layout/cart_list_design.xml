@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffff"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:background="@drawable/shadow_test1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circleview_cart_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/veg2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/circleview_cart_image"
+            android:textColorHint="#000000"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textview_item_name_cart"
+            android:text="Jain Thali"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 121"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_below="@id/textview_item_name_cart"
+            android:layout_toRightOf="@id/circleview_cart_image"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+           android:id="@+id/textview_cart_price"
+            />
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/cart_round_button"
+            android:layout_height="20dp"
+            android:layout_below="@id/textview_item_name_cart"
+            android:id="@+id/relative_layout_cart_sub_item"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/relative_layout_cart_sub_item"
+            android:layout_alignStart="@+id/relative_layout_cart_sub_item"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/textView_cart_item_counter"
+            />
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:background="@drawable/cart_round_button"
+            android:layout_height="20dp"
+            android:id="@+id/relative_layout__cartitem_adder"
+            android:layout_alignBaseline="@+id/relative_layout_cart_sub_item"
+            android:layout_alignBottom="@+id/relative_layout_cart_sub_item"
+            android:layout_toRightOf="@+id/textView_cart_item_counter"
+            android:layout_toEndOf="@+id/textView_cart_item_counter">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
